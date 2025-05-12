@@ -60,7 +60,7 @@ Available at: `http://localhost:8080/swagger-ui/index.html`
 ### 1. Clone the repository
 
 ```bash
-git clone <repo-url> applicationService
+git clone https://github.com/shlomi10/applicationService.git applicationService
 cd applicationService
 ```
 
@@ -72,7 +72,8 @@ mvn clean package -DskipTests
 
 ### 3. Build and run the system (with log service)
 
-Make sure your `docker-compose.yml` is in the parent directory containing both `applicationService/` and `logProject/`.
+Make sure to run docker build on the log service  directory 
+Then `docker-compose.yml` containing both `applicationService/` and `logProject/`.
 
 ```bash
 docker-compose up --build
