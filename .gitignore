@@ -1,0 +1,40 @@
+# Java
+*.class
+*.log
+*.jar
+*.war
+*.iml
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ
+.idea/
+*.iws
+*.ipr
+*.iml
+out/
+
+# VS Code
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Allure
+allure-results/
+allure-report/
+**/target/site/allure-maven-plugin/
+
+# Docker
+.dockerignore
+Dockerfile
+
+# Environment
+.env

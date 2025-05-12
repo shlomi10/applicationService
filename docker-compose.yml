@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  service-shuffle:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - LOG_SERVICE_URL=http://service-log:8081
+    depends_on:
+      - service-log
+
+  service-log:
+    image: log-service:1.0
+    ports:
+      - "8081:8081"
+
+  allure-report:
+    image: nginx:alpine
+    ports:
+      - "8888:80"
+    volumes:
+      - ./applicationService/target/site/allure-maven-plugin:/usr/share/nginx/html:ro
