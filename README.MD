@@ -5,7 +5,6 @@
 ![Maven 3.9.9](https://img.shields.io/badge/Maven-3.9.9-red?logo=apachemaven\&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
 ![Swagger](https://img.shields.io/badge/Swagger-Enabled-green?logo=swagger)
-![Allure](https://img.shields.io/badge/Allure-Integrated-purple?logo=allure)
 ![License](https://img.shields.io/github/license/your-org/your-repo?style=flat\&logo=github)
 
 This microservice provides an API to return a shuffled list of numbers from 1 to a given value (max 1000). It forwards the request to a logging microservice for asynchronous logging.
@@ -18,7 +17,6 @@ This microservice provides an API to return a shuffled list of numbers from 1 to
 * Asynchronous logging to external log service.
 * Built with Spring Boot 3 and Java 17.
 * Swagger UI for API documentation.
-* Allure-ready for test reporting.
 
 ---
 
@@ -96,7 +94,6 @@ docker-compose up --build
 * Maven
 * Docker / Docker Compose
 * Springdoc OpenAPI (Swagger)
-* Allure for testing (optional)
 
 ---
 

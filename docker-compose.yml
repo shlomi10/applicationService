@@ -16,10 +16,3 @@ services:
     image: log-service:1.0
     ports:
       - "8081:8081"
-
-  allure-report:
-    image: nginx:alpine
-    ports:
-      - "8888:80"
-    volumes:
-      - ./applicationService/target/site/allure-maven-plugin:/usr/share/nginx/html:ro
