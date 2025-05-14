@@ -5,7 +5,6 @@
 ![Maven 3.9.9](https://img.shields.io/badge/Maven-3.9.9-red?logo=apachemaven\&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
 ![Swagger](https://img.shields.io/badge/Swagger-Enabled-green?logo=swagger)
-![License](https://img.shields.io/github/license/your-org/your-repo?style=flat\&logo=github)
 
 This microservice provides an API to return a shuffled list of numbers from 1 to a given value (max 1000). It forwards the request to a logging microservice for asynchronous logging.
 
@@ -101,3 +100,27 @@ docker-compose up --build
 
 * The logging service must be accessible via `LOG_SERVICE_URL`.
 * Swagger won't show if the app is not started or if `/v3/api-docs` is not generated.
+
+## License 📄
+
+MIT License
+
+Copyright (c) 2025 shlomi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in  
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  
+THE SOFTWARE.
